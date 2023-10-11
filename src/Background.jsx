@@ -5,7 +5,7 @@ import Particles from "react-tsparticles";
 import React, { useEffect, useState } from "react";
 
 const Background = (props) => {
-  const [theme, setTheme] = useState("light");
+  const [theme] = useState("light");
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
